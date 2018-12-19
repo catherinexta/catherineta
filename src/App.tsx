@@ -1,15 +1,21 @@
 import * as React from 'react';
+
+import { Switch, Route } from 'react-router-dom';
+
 import './App.css';
+import Header from './common/header/header';
+import Home from './features/home/home';
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">Welcome to React</h1>
-      </header>
-      <p className="App-intro">
-        To get started, edit <code>src/App.tsx</code> and save to reload.
-      </p>
+      <Header />
+
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </main>
     </div>
   );
 };
