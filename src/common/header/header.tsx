@@ -13,7 +13,7 @@ const styles = () =>
       flexGrow: 1
     },
     link: {
-      marginLeft: '1em'
+      marginLeft: '1.5em'
     },
     name: {
       margin: 1,
@@ -25,7 +25,7 @@ const Header = (props: WithStyles<typeof styles>) => {
   const { classes } = props;
 
   return (
-    <AppBar position="static" color="default">
+    <AppBar position="fixed" color="default" elevation={0}>
       <Toolbar>
         <h1 className={classNames(classes.grow, classes.name)}>catherine.ta</h1>
 

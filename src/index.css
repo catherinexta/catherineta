@@ -14,22 +14,23 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-bottom: 0;
+}
+
+p {
+  text-align: justify;
 }
 
 h3 {
   margin-top: 0;
 }
 
-p {
-  margin-top: 0;
-}
-
 a {
-  text-decoration: none;
+  color: #294b90;
 }
 
 a:visited {
-  color: black;
+  color: #294b90;
 }

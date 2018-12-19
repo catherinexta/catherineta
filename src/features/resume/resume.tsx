@@ -38,17 +38,31 @@ const Resume = (props: WithStyles<typeof styles>) => {
           xs={12}
           alignItems="flex-end"
         >
-          <Grid item sm={9}>
+          <Grid item xs={12} sm={8}>
             <h2>Software Developer</h2>
           </Grid>
 
-          <Grid item sm={3}>
-            <h2 className={classes.date}>June, 2018 - Present</h2>
+          <Grid item sm={4}>
+            <h2 className={classes.date}>June 2018 - Present</h2>
           </Grid>
 
           <Grid item xs={12}>
-            <h3>Simon Computing - Alexandria, Virginia</h3>
-            <p>Something here about the job</p>
+            <h3>
+              <a href="http://simoncomputing.com">Simon Computing</a> -
+              Alexandria, Virginia
+            </h3>
+            <p>
+              Develop core skills on the full stack using React and Sprint Boot,
+              with an emphasis on the front-end. Designed and implemented an
+              internal candidate tracking system to accomodate the hiring
+              process. System allows management of candidates, open positions,
+              interview questions, and schedules. Built an administrative
+              licensing application for a mobile passport scanning app,{' '}
+              <a href="http://blacksharktech.com/#products">Xavier</a>.
+              Established a company-standardized boilerplate for ReactTS and
+              ReactJS applications with reusable components. Prepared tutorials
+              and documentation on React and Redux.
+            </p>
           </Grid>
         </Grid>
 
@@ -60,12 +74,12 @@ const Resume = (props: WithStyles<typeof styles>) => {
           xs={12}
           alignItems="flex-end"
         >
-          <Grid item sm={9}>
+          <Grid item xs={12} sm={8}>
             <h2>Digital Technology Leadership Program Intern</h2>
           </Grid>
 
-          <Grid item sm={3}>
-            <h2 className={classes.date}>June, 2017 - August, 2017</h2>
+          <Grid item sm={4}>
+            <h2 className={classes.date}>June 2017 - August 2017</h2>
           </Grid>
 
           <Grid item xs={12}>
@@ -82,12 +96,12 @@ const Resume = (props: WithStyles<typeof styles>) => {
           xs={12}
           alignItems="flex-end"
         >
-          <Grid item sm={12} md={9}>
+          <Grid item xs={12} sm={8}>
             <h2>Web Development Intern</h2>
           </Grid>
 
-          <Grid item sm={12} md={3}>
-            <h2 className={classes.date}>June, 2016 - July, 2016</h2>
+          <Grid item sm={4}>
+            <h2 className={classes.date}>June 2016 - July 2016</h2>
           </Grid>
 
           <Grid item xs={12}>
