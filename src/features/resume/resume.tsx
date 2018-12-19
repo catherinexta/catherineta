@@ -1,11 +1,123 @@
 import * as React from 'react';
 
-const Resume = () => {
+import Grid from '@material-ui/core/Grid';
+import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+
+const styles = () =>
+  createStyles({
+    section: {
+      minHeight: '100%'
+    },
+    date: {
+      textAlign: 'right',
+      fontSize: '1em',
+      fontStyle: 'oblique',
+      marginBottom: '4px',
+      fontWeight: 500,
+      marginLeft: '2em',
+      marginTop: '0',
+      display: window.innerWidth < 600 ? 'none' : 'block'
+    }
+  });
+
+const Resume = (props: WithStyles<typeof styles>) => {
+  const { classes } = props;
+
   return (
-    <div>
-      <p>Resume stuff</p>
-    </div>
+    <Grid container spacing={8} direction="column">
+      <Grid item xs={12} className={classes.section} container spacing={32}>
+        <Grid item xs={12}>
+          <h1>Work Experience</h1>
+        </Grid>
+
+        <Grid
+          container
+          spacing={8}
+          justify="space-between"
+          item
+          xs={12}
+          alignItems="flex-end"
+        >
+          <Grid item sm={9}>
+            <h2>Software Developer</h2>
+          </Grid>
+
+          <Grid item sm={3}>
+            <h2 className={classes.date}>June, 2018 - Present</h2>
+          </Grid>
+
+          <Grid item xs={12}>
+            <h3>Simon Computing - Alexandria, Virginia</h3>
+            <p>Something here about the job</p>
+          </Grid>
+        </Grid>
+
+        <Grid
+          container
+          spacing={8}
+          justify="space-between"
+          item
+          xs={12}
+          alignItems="flex-end"
+        >
+          <Grid item sm={9}>
+            <h2>Digital Technology Leadership Program Intern</h2>
+          </Grid>
+
+          <Grid item sm={3}>
+            <h2 className={classes.date}>June, 2017 - August, 2017</h2>
+          </Grid>
+
+          <Grid item xs={12}>
+            <h3>GE Digital - San Ramon, California</h3>
+            <p>Something here about the job</p>
+          </Grid>
+        </Grid>
+
+        <Grid
+          container
+          spacing={8}
+          justify="space-between"
+          item
+          xs={12}
+          alignItems="flex-end"
+        >
+          <Grid item sm={12} md={9}>
+            <h2>Web Development Intern</h2>
+          </Grid>
+
+          <Grid item sm={12} md={3}>
+            <h2 className={classes.date}>June, 2016 - July, 2016</h2>
+          </Grid>
+
+          <Grid item xs={12}>
+            <h3>Simon Computing - Alexandria, Virginia</h3>
+            <p>Something here about the job</p>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} className={classes.section} container spacing={32}>
+        <Grid item xs={12}>
+          <h1>Other Professional Experience</h1>
+        </Grid>
+
+        <Grid item xs={12}>
+          <h2>Teaching Assistant</h2>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} className={classes.section} container spacing={32}>
+        <Grid item xs={12}>
+          <h1>Education</h1>
+        </Grid>
+
+        <Grid item xs={12}>
+          <h2>2018 B.S. Computer Science</h2>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 
-export default Resume;
+export default withStyles(styles)(Resume);
