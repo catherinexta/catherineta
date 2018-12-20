@@ -19,6 +19,11 @@ p {
   margin-bottom: 0;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 0.95em;
+}
+
 p {
   text-align: justify;
 }
@@ -28,6 +33,7 @@ h3 {
 }
 
 a {
+  text-decoration: none;
   color: #294b90;
 }
 

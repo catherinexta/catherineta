@@ -17,6 +17,12 @@ const styles = () =>
       marginLeft: '2em',
       marginTop: '0',
       display: window.innerWidth < 600 ? 'none' : 'block'
+    },
+    company: {
+      textDecorationColor: 'green',
+      display: 'inline-block',
+      borderBottom: '1px solid green',
+      paddingBottom: 2
     }
   });
 
@@ -48,17 +54,17 @@ const Resume = (props: WithStyles<typeof styles>) => {
 
           <Grid item xs={12}>
             <h3>
-              <a href="http://simoncomputing.com">Simon Computing</a> -
+              <span className={classes.company}>Simon Computing</span> •
               Alexandria, Virginia
             </h3>
+
             <p>
               Develop core skills on the full stack using React and Sprint Boot,
               with an emphasis on the front-end. Designed and implemented an
               internal candidate tracking system to accomodate the hiring
               process. System allows management of candidates, open positions,
               interview questions, and schedules. Built an administrative
-              licensing application for a mobile passport scanning app,{' '}
-              <a href="http://blacksharktech.com/#products">Xavier</a>.
+              licensing application for a mobile passport scanning app, Xavier.
               Established a company-standardized boilerplate for ReactTS and
               ReactJS applications with reusable components. Prepared tutorials
               and documentation on React and Redux.
@@ -83,8 +89,20 @@ const Resume = (props: WithStyles<typeof styles>) => {
           </Grid>
 
           <Grid item xs={12}>
-            <h3>GE Digital - San Ramon, California</h3>
-            <p>Something here about the job</p>
+            <h3>
+              <span className={classes.company}>GE Digital</span> • San Ramon,
+              California
+            </h3>
+
+            <p>
+              Developed UI for the Asset Workbench product on Predix, GE
+              Digital’s Industrial IoT platform. Improved the search
+              functionality for assets via GEL queries and free text search.
+              Integrated an attribute indentation feature to allow clients to
+              easily keep track of asset attributes. Utilized Polymer to allow
+              for consistent cross-browser behavior with JavaScript, HTML, and
+              CSS.
+            </p>
           </Grid>
         </Grid>
 
@@ -105,8 +123,16 @@ const Resume = (props: WithStyles<typeof styles>) => {
           </Grid>
 
           <Grid item xs={12}>
-            <h3>Simon Computing - Alexandria, Virginia</h3>
-            <p>Something here about the job</p>
+            <h3>
+              <span className={classes.company}>Simon Computing</span> •
+              Alexandria, Virginia
+            </h3>
+
+            <p>
+              Designed and developed a website to promote a company-designed
+              Raspberry Pi case, SkyCase. Executed full stack web development
+              using Angular2 and Spring Boot.
+            </p>
           </Grid>
         </Grid>
       </Grid>
