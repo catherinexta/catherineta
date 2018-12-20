@@ -9,6 +9,10 @@ h1 {
   font-size: 3em;
 }
 
+*:focus {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
