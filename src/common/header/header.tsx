@@ -18,6 +18,9 @@ const styles = () =>
     name: {
       margin: 1,
       fontSize: '1.5em'
+    },
+    appbar: {
+      background: '#fff'
     }
   });
 
@@ -25,7 +28,12 @@ const Header = (props: WithStyles<typeof styles>) => {
   const { classes } = props;
 
   return (
-    <AppBar position="fixed" color="default" elevation={0}>
+    <AppBar
+      position="fixed"
+      color="default"
+      elevation={0}
+      className={classes.appbar}
+    >
       <Toolbar>
         <h1 className={classNames(classes.grow, classes.name)}>catherine.ta</h1>
 

@@ -14,9 +14,7 @@ const styles = () =>
       fontStyle: 'oblique',
       marginBottom: '4px',
       fontWeight: 500,
-      marginLeft: '2em',
-      marginTop: '0',
-      display: window.innerWidth < 600 ? 'none' : 'block'
+      marginTop: '0'
     },
     company: {
       textDecorationColor: 'green',
@@ -30,25 +28,25 @@ const Resume = (props: WithStyles<typeof styles>) => {
   const { classes } = props;
 
   return (
-    <Grid container spacing={8} direction="column">
-      <Grid item xs={12} className={classes.section} container spacing={32}>
+    <Grid container spacing={40} direction="column">
+      <Grid
+        item
+        xs={12}
+        className={classes.section}
+        container
+        spacing={32}
+        justify="center"
+      >
         <Grid item xs={12}>
           <h1>Work Experience</h1>
         </Grid>
 
-        <Grid
-          container
-          spacing={8}
-          justify="space-between"
-          item
-          xs={12}
-          alignItems="flex-end"
-        >
-          <Grid item xs={12} sm={8}>
+        <Grid container spacing={8} item xs={11} alignItems="flex-end">
+          <Grid item xs={12} md={8}>
             <h2>Software Developer</h2>
           </Grid>
 
-          <Grid item sm={4}>
+          <Grid item md={4}>
             <h2 className={classes.date}>June 2018 - Present</h2>
           </Grid>
 
@@ -59,32 +57,26 @@ const Resume = (props: WithStyles<typeof styles>) => {
             </h3>
 
             <p>
-              Develop core skills on the full stack using React and Sprint Boot,
-              with an emphasis on the front-end. Designed and implemented an
-              internal candidate tracking system to accomodate the hiring
-              process. System allows management of candidates, open positions,
-              interview questions, and schedules. Built an administrative
-              licensing application for a mobile passport scanning app, Xavier.
-              Established a company-standardized boilerplate for ReactTS and
-              ReactJS applications with reusable components. Prepared tutorials
-              and documentation on React and Redux.
+              Develop on the full stack using React and Spring Boot, with an
+              emphasis on the front-end. Designed and implemented an internal
+              candidate tracking system to accomodate the hiring process. System
+              allows management of candidates, open positions, interview
+              questions, and schedules. Built an administrative licensing
+              application for a mobile passport scanning app, Xavier. Created a
+              Python script to generate basic Spring Boot projects. Established
+              a company-standardized boilerplate for ReactTS and ReactJS
+              applications with reusable components. Prepared tutorials and
+              documentation on React and Redux.
             </p>
           </Grid>
         </Grid>
 
-        <Grid
-          container
-          spacing={8}
-          justify="space-between"
-          item
-          xs={12}
-          alignItems="flex-end"
-        >
+        <Grid container spacing={8} item xs={11} alignItems="flex-end">
           <Grid item xs={12} sm={8}>
             <h2>Digital Technology Leadership Program Intern</h2>
           </Grid>
 
-          <Grid item sm={4}>
+          <Grid item md={4}>
             <h2 className={classes.date}>June 2017 - August 2017</h2>
           </Grid>
 
@@ -106,19 +98,12 @@ const Resume = (props: WithStyles<typeof styles>) => {
           </Grid>
         </Grid>
 
-        <Grid
-          container
-          spacing={8}
-          justify="space-between"
-          item
-          xs={12}
-          alignItems="flex-end"
-        >
+        <Grid container spacing={8} item xs={11} alignItems="flex-end">
           <Grid item xs={12} sm={8}>
             <h2>Web Development Intern</h2>
           </Grid>
 
-          <Grid item sm={4}>
+          <Grid item md={4}>
             <h2 className={classes.date}>June 2016 - July 2016</h2>
           </Grid>
 
@@ -137,23 +122,73 @@ const Resume = (props: WithStyles<typeof styles>) => {
         </Grid>
       </Grid>
 
-      <Grid item xs={12} className={classes.section} container spacing={32}>
+      <Grid
+        item
+        xs={12}
+        className={classes.section}
+        container
+        spacing={32}
+        justify="center"
+      >
         <Grid item xs={12}>
           <h1>Other Professional Experience</h1>
         </Grid>
 
-        <Grid item xs={12}>
-          <h2>Teaching Assistant</h2>
+        <Grid container spacing={8} item xs={11} alignItems="flex-end">
+          <Grid item xs={12} md={8}>
+            <h2>Teaching Assistant</h2>
+          </Grid>
+
+          <Grid item md={4}>
+            <h2 className={classes.date}>September 2015 – May 2018</h2>
+          </Grid>
+
+          <Grid item xs={12}>
+            <h3>
+              <span className={classes.company}>
+                Dept. of Engineering Education
+              </span>{' '}
+              • Blacksburg, Virginia
+            </h3>
+
+            <p>
+              Assisted instructors in the classroom and worked in the
+              engineering homework lounge. Mediated students’ comprehension of
+              MATLAB, Inventor, and engineering concepts. Created supplementary
+              presentations on course material as additional aid for students.
+              Provided constructive feedback on colleagues’ work to improve the
+              quality of assignments and lectures.
+            </p>
+          </Grid>
         </Grid>
       </Grid>
 
-      <Grid item xs={12} className={classes.section} container spacing={32}>
+      <Grid
+        item
+        xs={12}
+        className={classes.section}
+        container
+        spacing={32}
+        justify="center"
+      >
         <Grid item xs={12}>
           <h1>Education</h1>
         </Grid>
 
-        <Grid item xs={12}>
-          <h2>2018 B.S. Computer Science</h2>
+        <Grid container spacing={8} item xs={11} alignItems="flex-end">
+          <Grid item xs={12}>
+            <h3>
+              <span className={classes.company}>
+                2018 B.S. Computer Science, Virginia Tech
+              </span>{' '}
+              • Blacksburg, Virginia
+            </h3>
+            <p>College of Engineering, GPA: 3.58/4.0</p>
+            <p>
+              Dean’s List – Fall 2014, Spring 2016, Fall 2016, Spring 2017, Fall
+              2017, Spring 2018
+            </p>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
