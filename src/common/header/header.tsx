@@ -60,6 +60,13 @@ const Header = (props: WithStyles<typeof styles>) => {
         </Link>
 
         <Link
+          to="/portfolio"
+          className={classNames(classes.navigation, classes.link)}
+        >
+          portfolio
+        </Link>
+
+        <Link
           to="/resume"
           className={classNames(classes.navigation, classes.link)}
         >
