@@ -12,15 +12,31 @@ const styles = () =>
     grow: {
       flexGrow: 1
     },
-    link: {
+    navigation: {
       marginLeft: '1.5em'
     },
     name: {
       margin: 1,
-      fontSize: '1.5em'
+      fontSize: '1.5em',
+      fontFamily: 'Playfair Display',
+      fontWeight: 700
     },
     appbar: {
       background: '#fff'
+    },
+    link: {
+      textDecoration: 'none',
+      borderBottom: 'solid 2px transparent',
+      color: '#000',
+      '&$visited': {
+        textDecoration: 'none',
+        borderBottom: 'solid 2px transparent',
+        color: '#fff'
+      },
+      '&:hover': {
+        textDecoration: 'line-through',
+        textDecorationColor: '#931717'
+      }
     }
   });
 
@@ -35,17 +51,24 @@ const Header = (props: WithStyles<typeof styles>) => {
       className={classes.appbar}
     >
       <Toolbar>
-        <h1 className={classNames(classes.grow, classes.name)}>catherine.ta</h1>
-
-        <Link to="/" className={classes.link}>
-          home
+        <Link
+          to="/"
+          className={classNames(classes.grow, classes.name, classes.link)}
+        >
+          catherine.ta
         </Link>
 
-        <Link to="/about" className={classes.link}>
+        <Link
+          to="/about"
+          className={classNames(classes.navigation, classes.link)}
+        >
           about
         </Link>
 
-        <Link to="/resume" className={classes.link}>
+        <Link
+          to="/resume"
+          className={classNames(classes.navigation, classes.link)}
+        >
           resume
         </Link>
       </Toolbar>

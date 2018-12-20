@@ -31,16 +31,3 @@ p {
 h3 {
   margin-top: 0;
 }
-
-a,
-a:visited {
-  text-decoration: none;
-  border-bottom: solid 2px transparent;
-  color: #000;
-}
-
-a:hover {
-  /* border-bottom: solid 2px #931717; */
-  text-decoration: line-through;
-  text-decoration-color: #931717;
-}

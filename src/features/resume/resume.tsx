@@ -28,7 +28,7 @@ const Resume = (props: WithStyles<typeof styles>) => {
   const { classes } = props;
 
   return (
-    <Grid container spacing={40} direction="column">
+    <Grid container spacing={40} direction="column" justify="space-evenly">
       <Grid
         item
         xs={12}
@@ -183,13 +183,24 @@ const Resume = (props: WithStyles<typeof styles>) => {
               </span>{' '}
               • Blacksburg, Virginia
             </h3>
-            <p>College of Engineering, GPA: 3.58/4.0</p>
-            <p>
-              Dean’s List – Fall 2014, Spring 2016, Fall 2016, Spring 2017, Fall
-              2017, Spring 2018
-            </p>
           </Grid>
         </Grid>
+      </Grid>
+
+      <hr />
+
+      <Grid
+        item
+        xs={12}
+        className={classes.section}
+        container
+        spacing={32}
+        justify="center"
+      >
+        <p>
+          Interested in a full resume? Please contact me at{' '}
+          <i>catherinexta@gmail.com</i> to request an official copy.
+        </p>
       </Grid>
     </Grid>
   );
