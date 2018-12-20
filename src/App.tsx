@@ -10,7 +10,7 @@ import NotFound from './common/routes/not-found';
 import Portfolio from './features/portolio/portolio';
 import Resume from './features/resume/resume';
 
-const App = () => (
+const App: React.SFC = () => (
   <div className="App">
     <Header />
 

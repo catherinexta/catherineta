@@ -38,9 +38,9 @@ const styles = () =>
     }
   });
 
-const PortfolioModal = (
-  props: IPortfolioModalProps & WithStyles<typeof styles>
-) => {
+const PortfolioModal: React.SFC<
+  IPortfolioModalProps & WithStyles<typeof styles>
+> = props => {
   const { classes } = props;
 
   return (

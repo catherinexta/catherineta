@@ -24,7 +24,7 @@ const styles = () =>
     }
   });
 
-const Resume = (props: WithStyles<typeof styles>) => {
+const Resume: React.SFC<WithStyles<typeof styles>> = props => {
   const { classes } = props;
 
   return (

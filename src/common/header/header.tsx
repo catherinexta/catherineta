@@ -35,7 +35,7 @@ const styles = () =>
     }
   });
 
-const Header = (props: WithStyles<typeof styles>) => {
+const Header: React.SFC<WithStyles<typeof styles>> = props => {
   const { classes } = props;
 
   return (
