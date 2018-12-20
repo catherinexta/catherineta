@@ -6,7 +6,7 @@ import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
 const styles = () =>
   createStyles({
     section: {
-      minHeight: '100%'
+      marginLeft: '8px'
     },
     date: {
       textAlign: 'right',
@@ -28,14 +28,14 @@ const Resume = (props: WithStyles<typeof styles>) => {
   const { classes } = props;
 
   return (
-    <Grid container spacing={40} direction="column" justify="space-evenly">
+    <Grid container spacing={40} direction="column">
       <Grid
         item
         xs={12}
-        className={classes.section}
         container
         spacing={32}
         justify="center"
+        className={classes.section}
       >
         <Grid item xs={12}>
           <h1>Work Experience</h1>
@@ -179,28 +179,12 @@ const Resume = (props: WithStyles<typeof styles>) => {
           <Grid item xs={12}>
             <h3>
               <span className={classes.company}>
-                2018 B.S. Computer Science, Virginia Tech
+                2018 B.S. Computer Science
               </span>{' '}
-              • Blacksburg, Virginia
+              • Virginia Tech
             </h3>
           </Grid>
         </Grid>
-      </Grid>
-
-      <hr />
-
-      <Grid
-        item
-        xs={12}
-        className={classes.section}
-        container
-        spacing={32}
-        justify="center"
-      >
-        <p>
-          Interested in a full resume? Please contact me at{' '}
-          <i>catherinexta@gmail.com</i> to request an official copy.
-        </p>
       </Grid>
     </Grid>
   );

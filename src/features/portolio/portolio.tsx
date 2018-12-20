@@ -3,6 +3,7 @@ import * as React from 'react';
 import Grid from '@material-ui/core/Grid';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import { WithStyles, withStyles, createStyles } from '@material-ui/core/styles';
 
 import { tileData } from './tile-data';
 import PortfolioModal from './modal';
@@ -14,7 +15,19 @@ interface IPortfolioState {
   source: string;
 }
 
-class Portfolio extends React.Component {
+const styles = () =>
+  createStyles({
+    gridTile: {
+      '&:hover': {
+        cursor: 'pointer'
+      }
+    }
+  });
+
+class Portfolio extends React.Component<
+  WithStyles<typeof styles>,
+  IPortfolioState
+> {
   readonly state: IPortfolioState = {
     modalOpen: false,
     title: '',
@@ -37,6 +50,7 @@ class Portfolio extends React.Component {
 
   render() {
     const { modalOpen, title, description, source } = this.state;
+    const { classes } = this.props;
 
     return (
       <div>
@@ -48,6 +62,7 @@ class Portfolio extends React.Component {
                   <GridListTile
                     key={img.source + idx}
                     cols={1}
+                    className={classes.gridTile}
                     // tslint:disable-next-line jsx-no-lambda
                     onClick={() =>
                       this.handleOpen(img.source, img.title, img.description)
@@ -73,4 +88,4 @@ class Portfolio extends React.Component {
   }
 }
 
-export default Portfolio;
+export default withStyles(styles)(Portfolio);
