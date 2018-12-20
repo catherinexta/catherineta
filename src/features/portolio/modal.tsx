@@ -18,11 +18,10 @@ const styles = () =>
   createStyles({
     modal: {
       width: '50%',
-      top: '5em',
-      bottom: '50%',
-      margin: '0 auto',
+      display: 'flex',
       justifyContent: 'center',
-      alignContent: 'center'
+      alignItems: 'center',
+      margin: '0 auto'
     },
     image: {
       maxWidth: '100%',

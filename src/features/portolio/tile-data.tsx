@@ -4,47 +4,47 @@ import ihi from '../../common/images/ihi.png';
 export const tileData = [
   {
     source: haechan,
-    title: 'the boy i love',
-    description: 'Haechan'
+    title: 'image 1',
+    description: 'plz'
   },
   {
     source: ihi,
-    title: 'the boy i love',
-    description: 'ihi'
+    title: 'image 2',
+    description: 'work'
   },
   {
     source: haechan,
-    title: 'the boy i love',
-    description: 'Haechan'
+    title: 'image 3',
+    description: 'hello'
   },
   {
     source: ihi,
-    title: 'the boy i love',
-    description: 'ihi'
+    title: 'image 4',
+    description: 'test'
   },
   {
     source: haechan,
-    title: 'the boy i love',
-    description: 'Haechan'
+    title: 'image 5',
+    description: 'something'
   },
   {
     source: ihi,
-    title: 'the boy i love',
-    description: 'ihi'
+    title: 'image 6',
+    description: 'else'
   },
   {
     source: haechan,
-    title: 'the boy i love',
-    description: 'Haechan'
+    title: 'image 7',
+    description: 'smiley'
   },
   {
     source: ihi,
-    title: 'the boy i love',
-    description: 'ihi'
+    title: 'image 8',
+    description: 'twice'
   },
   {
     source: haechan,
-    title: 'the boy i love',
-    description: 'Haechan'
+    title: 'image 9',
+    description: 'once'
   }
 ];
