@@ -25,7 +25,7 @@ const styles = () =>
     },
     image: {
       maxWidth: '100%',
-      maxHeight: '25em',
+      maxHeight: '30em',
       display: 'block',
       marginLeft: 'auto',
       marginRight: 'auto'
