@@ -10,16 +10,16 @@ const styles = () =>
     },
     date: {
       textAlign: 'right',
-      fontSize: '1em',
+      fontSize: '0.95em',
       fontStyle: 'oblique',
       marginBottom: '4px',
       fontWeight: 500,
       marginTop: '0'
     },
     company: {
-      textDecorationColor: 'green',
+      textDecorationColor: '#076332',
       display: 'inline-block',
-      borderBottom: '1px solid green',
+      borderBottom: '1px solid #076332',
       paddingBottom: 2
     }
   });
