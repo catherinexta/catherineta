@@ -28,11 +28,6 @@ const styles = () =>
       textDecoration: 'none',
       borderBottom: 'solid 2px transparent',
       color: '#000',
-      '&$visited': {
-        textDecoration: 'none',
-        borderBottom: 'solid 2px transparent',
-        color: '#fff'
-      },
       '&:hover': {
         textDecoration: 'line-through',
         textDecorationColor: '#931717'
@@ -51,12 +46,11 @@ const Header = (props: WithStyles<typeof styles>) => {
       className={classes.appbar}
     >
       <Toolbar>
-        <Link
-          to="/"
-          className={classNames(classes.grow, classes.name, classes.link)}
-        >
-          catherine.ta
-        </Link>
+        <span className={classes.grow}>
+          <Link to="/" className={classNames(classes.name, classes.link)}>
+            catherine.ta
+          </Link>
+        </span>
 
         <Link
           to="/about"
