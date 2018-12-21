@@ -1,9 +1,14 @@
 import * as React from 'react';
 
 import Grid from '@material-ui/core/Grid';
-import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+import {
+  createStyles,
+  withStyles,
+  Theme,
+  WithStyles
+} from '@material-ui/core/styles';
 
-const styles = () =>
+const styles = (theme: Theme) =>
   createStyles({
     section: {
       marginLeft: '8px'
@@ -17,10 +22,12 @@ const styles = () =>
       marginTop: '0'
     },
     company: {
-      textDecorationColor: '#076332',
       display: 'inline-block',
-      borderBottom: '1px solid #076332',
+      borderBottom: `1px solid ${theme.palette.primary.main}`,
       paddingBottom: 2
+    },
+    paragraph: {
+      textAlign: 'justify'
     }
   });
 
@@ -56,7 +63,7 @@ const Resume: React.SFC<WithStyles<typeof styles>> = props => {
               Alexandria, Virginia
             </h3>
 
-            <p>
+            <p className={classes.paragraph}>
               Develop on the full stack using React and Spring Boot, with an
               emphasis on the front-end. Designed and implemented an internal
               candidate tracking system to accomodate the hiring process. System
@@ -86,7 +93,7 @@ const Resume: React.SFC<WithStyles<typeof styles>> = props => {
               California
             </h3>
 
-            <p>
+            <p className={classes.paragraph}>
               Developed UI for the Asset Workbench product on Predix, GE
               Digital’s Industrial IoT platform. Improved the search
               functionality for assets via GEL queries and free text search.
@@ -113,7 +120,7 @@ const Resume: React.SFC<WithStyles<typeof styles>> = props => {
               Alexandria, Virginia
             </h3>
 
-            <p>
+            <p className={classes.paragraph}>
               Designed and developed a website to promote a company-designed
               Raspberry Pi case, SkyCase. Executed full stack web development
               using Angular2 and Spring Boot.
@@ -151,7 +158,7 @@ const Resume: React.SFC<WithStyles<typeof styles>> = props => {
               • Blacksburg, Virginia
             </h3>
 
-            <p>
+            <p className={classes.paragraph}>
               Assisted instructors in the classroom and worked in the
               engineering homework lounge. Mediated students’ comprehension of
               MATLAB, Inventor, and engineering concepts. Created supplementary

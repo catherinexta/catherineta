@@ -4,7 +4,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 import Modal from '@material-ui/core/Modal';
-import { WithStyles, withStyles, createStyles } from '@material-ui/core/styles';
+import {
+  WithStyles,
+  withStyles,
+  Theme,
+  createStyles
+} from '@material-ui/core/styles';
 
 interface IPortfolioModalProps {
   open: boolean;
@@ -14,7 +19,7 @@ interface IPortfolioModalProps {
   source: string;
 }
 
-const styles = () =>
+const styles = (theme: Theme) =>
   createStyles({
     modal: {
       maxWidth: '50%',
@@ -31,9 +36,8 @@ const styles = () =>
       marginRight: 'auto'
     },
     title: {
-      textDecorationColor: '#dda455',
       display: 'inline-block',
-      borderBottom: '1px solid #dda455',
+      borderBottom: `1px solid ${theme.palette.primary.main}`,
       paddingBottom: 2
     }
   });
@@ -51,15 +55,15 @@ const PortfolioModal: React.SFC<
     >
       <Card>
         <CardContent>
-          <Grid container spacing={8}>
-            <Grid item xs={12}>
+          <Grid container spacing={16}>
+            <Grid item xs={8}>
               <img
                 src={props.source}
                 alt={props.title}
                 className={classes.image}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={4}>
               <h3 className={classes.title}>{props.title}</h3>
               <p>{props.description}</p>
             </Grid>

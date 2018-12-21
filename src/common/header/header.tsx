@@ -1,13 +1,18 @@
 import * as React from 'react';
 
 import { Link } from 'react-router-dom';
-import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+import {
+  createStyles,
+  withStyles,
+  Theme,
+  WithStyles
+} from '@material-ui/core/styles';
 import classNames from 'classnames';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
-const styles = () =>
+const styles = (theme: Theme) =>
   createStyles({
     grow: {
       flexGrow: 1
@@ -30,7 +35,7 @@ const styles = () =>
       color: '#000',
       '&:hover': {
         textDecoration: 'line-through',
-        textDecorationColor: '#931717'
+        textDecorationColor: theme.palette.primary.main
       }
     }
   });
