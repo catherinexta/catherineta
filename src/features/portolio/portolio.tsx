@@ -55,6 +55,10 @@ class Portfolio extends React.Component<
     return (
       <div>
         <Grid container spacing={0} direction="column" alignItems="center">
+          <h1>Content coming soon...</h1>
+
+          <br />
+
           <Grid item xs={12} md={11}>
             <GridList cellHeight={200} cols={3}>
               {tileData.map((img, idx) => {

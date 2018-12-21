@@ -16,8 +16,8 @@ const Home: React.SFC<WithStyles<typeof styles>> = props => {
   const { classes } = props;
 
   return (
-    <Grid container>
-      <Grid item xs={9}>
+    <Grid container justify="center">
+      <Grid item>
         <img src={haneul} className={classes.image} />
       </Grid>
     </Grid>
