@@ -17,7 +17,7 @@ interface IPortfolioModalProps {
 const styles = () =>
   createStyles({
     modal: {
-      width: '50%',
+      maxWidth: '50%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
