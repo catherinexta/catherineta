@@ -5,46 +5,51 @@ export const tileData = [
   {
     source: haechan,
     title: 'image 1',
-    description: 'plz'
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam nisl at euismod ultrices. Praesent scelerisque felis non lacinia venenatis.'
   },
   {
     source: ihi,
     title: 'image 2',
-    description: 'work'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   },
   {
     source: haechan,
     title: 'image 3',
-    description: 'hello'
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam nisl at euismod ultrices. Praesent scelerisque felis non lacinia venenatis. Phasellus eu nibh vel velit commodo cursus quis luctus neque.'
   },
   {
     source: ihi,
     title: 'image 4',
-    description: 'test'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   },
   {
     source: haechan,
     title: 'image 5',
-    description: 'something'
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam nisl at euismod ultrices. Praesent scelerisque felis non lacinia venenatis. Phasellus eu nibh vel velit commodo cursus quis luctus neque.'
   },
   {
     source: ihi,
     title: 'image 6',
-    description: 'else'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   },
   {
     source: haechan,
     title: 'image 7',
-    description: 'smiley'
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam nisl at euismod ultrices. Praesent scelerisque felis non lacinia venenatis. Phasellus eu nibh vel velit commodo cursus quis luctus neque.'
   },
   {
     source: ihi,
     title: 'image 8',
-    description: 'twice'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   },
   {
     source: haechan,
     title: 'image 9',
-    description: 'once'
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam nisl at euismod ultrices. Praesent scelerisque felis non lacinia venenatis. Phasellus eu nibh vel velit commodo cursus quis luctus neque.'
   }
 ];

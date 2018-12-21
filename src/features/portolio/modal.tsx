@@ -51,15 +51,15 @@ const PortfolioModal: React.SFC<
     >
       <Card>
         <CardContent>
-          <Grid container spacing={8}>
-            <Grid item xs={12}>
+          <Grid container spacing={16}>
+            <Grid item xs={8}>
               <img
                 src={props.source}
                 alt={props.title}
                 className={classes.image}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={4}>
               <h3 className={classes.title}>{props.title}</h3>
               <p>{props.description}</p>
             </Grid>
