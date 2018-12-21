@@ -1,9 +1,14 @@
 import * as React from 'react';
 
 import Grid from '@material-ui/core/Grid';
-import { createStyles, withStyles, WithStyles } from '@material-ui/core/styles';
+import {
+  createStyles,
+  withStyles,
+  Theme,
+  WithStyles
+} from '@material-ui/core/styles';
 
-const styles = () =>
+const styles = (theme: Theme) =>
   createStyles({
     section: {
       marginLeft: '8px'
@@ -17,9 +22,8 @@ const styles = () =>
       marginTop: '0'
     },
     company: {
-      textDecorationColor: '#076332',
       display: 'inline-block',
-      borderBottom: '1px solid #076332',
+      borderBottom: `1px solid ${theme.palette.primary.main}`,
       paddingBottom: 2
     },
     paragraph: {
