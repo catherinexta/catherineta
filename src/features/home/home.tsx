@@ -5,18 +5,22 @@ import { WithStyles, withStyles, createStyles } from '@material-ui/core/styles';
 
 import night from '../../common/images/night.jpg';
 
-const styles = () =>
-  createStyles({
+const styles = () => {
+  const width = window.innerWidth;
+
+  return createStyles({
     image: {
-      maxHeight: '30em'
+      maxHeight: width > 600 ? '30em' : (width * 2) / 3
     }
   });
+};
 
 const Home: React.SFC<WithStyles<typeof styles>> = props => {
   const { classes } = props;
 
   return (
-    <Grid container justify="center">
+    <Grid container>
+      <Grid item xs={1} sm={2} />
       <Grid item>
         <img src={night} className={classes.image} />
       </Grid>
