@@ -15,67 +15,78 @@ export const tileData = [
   {
     source: angi,
     title: 'XM_001',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: hyej,
     title: 'XM_002',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: isa,
     title: 'XM_003',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: jaz,
     title: 'XM_004',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: laika,
     title: 'XM_005',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: mels,
     title: 'XM_006',
-    description: 'Christmas 2018, a gift for a friend'
+    description: 'Christmas 2018, a gift for a friend',
+    square: false
   },
   {
     source: midterm1,
     title: 'Emergence_001',
-    description:
-      'Inspired by Casey Reas’ Processes, a midterm project for ART 3504 that explores emergent complexity. Created in Processing.'
+    description: `Inspired by Casey Reas’ Processes, a midterm project for ART 3504 that explores emergent complexity. Created in Processing.`,
+    square: true
   },
   {
     source: midterm2,
     title: 'Emergence_002',
     description:
-      'Inspired by Casey Reas’ Processes, a midterm project for ART 3504 that explores emergent complexity. Created in Processing.'
+      'Inspired by Casey Reas’ Processes, a midterm project for ART 3504 that explores emergent complexity. Created in Processing.',
+    square: true
   },
   {
     source: final1,
     title: 'Earthquake_001',
     description:
-      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504 . Created in Processing."
+      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504 . Created in Processing.",
+    square: true
   },
   {
     source: final2,
     title: 'Earthquake_002',
     description:
-      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing."
+      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing.",
+    square: true
   },
   {
     source: final3,
     title: 'Earthquake_003',
     description:
-      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing."
+      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing.",
+    square: true
   },
   {
     source: final4,
     title: 'Earthquake_004',
     description:
-      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing."
+      "Data visualization of earthquakes on the earth's surface from 1965 to 2016, a final project for ART 3504. Created in Processing.",
+    square: true
   }
 ];

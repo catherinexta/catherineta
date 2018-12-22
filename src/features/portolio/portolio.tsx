@@ -13,6 +13,7 @@ interface IPortfolioState {
   title: string;
   description: string;
   source: string;
+  square: boolean;
 }
 
 const styles = () =>
@@ -32,15 +33,22 @@ class Portfolio extends React.Component<
     modalOpen: false,
     title: '',
     description: '',
-    source: ''
+    source: '',
+    square: false
   };
 
-  handleOpen = (source: string, title: string, description: string) => {
+  handleOpen = (
+    source: string,
+    title: string,
+    description: string,
+    square: boolean
+  ) => {
     this.setState({
       modalOpen: true,
       title,
       description,
-      source
+      source,
+      square
     });
   };
 
@@ -49,7 +57,7 @@ class Portfolio extends React.Component<
   };
 
   render() {
-    const { modalOpen, title, description, source } = this.state;
+    const { modalOpen, title, description, source, square } = this.state;
     const { classes } = this.props;
 
     return (
@@ -65,7 +73,12 @@ class Portfolio extends React.Component<
                     className={classes.gridTile}
                     // tslint:disable-next-line jsx-no-lambda
                     onClick={() =>
-                      this.handleOpen(img.source, img.title, img.description)
+                      this.handleOpen(
+                        img.source,
+                        img.title,
+                        img.description,
+                        img.square
+                      )
                     }
                   >
                     <img src={img.source} />
@@ -82,6 +95,7 @@ class Portfolio extends React.Component<
           title={title}
           description={description}
           source={source}
+          square={square}
         />
       </div>
     );
